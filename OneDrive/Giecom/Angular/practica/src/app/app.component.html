@@ -1,0 +1,12 @@
+<ul>
+  <li>{{numero}}</li>
+  <li>{{usuario.name}}</li>
+  <li>{{usuario.age}}</li>
+  <li>{{usuario.cc}}</li>
+  <li>{{usuario.sex}}</li>
+  <img [src]="usuario.img" alt="" width="200px">
+  @if (usuario) {}
+  
+</ul>
+
+<button (click)="mostrarNombreAlerta(usuario.name)">Mostrar Alerta</button>
